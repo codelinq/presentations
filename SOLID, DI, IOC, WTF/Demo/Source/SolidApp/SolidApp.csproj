@@ -2,18 +2,20 @@
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{542E7095-BA2D-44BF-828B-F6E85A4308DB}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <ProjectGuid>{6E612EF1-0185-4A77-BF27-4BBFF7278F68}</ProjectGuid>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Solid.Demo</RootNamespace>
-    <AssemblyName>Solid.Demo</AssemblyName>
+    <RootNamespace>SolidApp</RootNamespace>
+    <AssemblyName>SolidApp</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -22,7 +24,8 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -32,7 +35,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -41,23 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="OCP\Better\BulkNotificationService.cs" />
-    <Compile Include="OCP\Better\EmailNotificationService.cs" />
-    <Compile Include="OCP\Better\GrowlNotificationService.cs" />
-    <Compile Include="OCP\Better\INotificationService.cs" />
-    <Compile Include="OCP\Better\SuperProcess.cs" />
-    <Compile Include="OCP\Violations\NotificationService.cs" />
-    <Compile Include="OCP\Violations\SuperProcess.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SRP\Better\Customer.cs" />
-    <Compile Include="SRP\Better\DBContext.cs" />
-    <Compile Include="SRP\Better\Repository.cs" />
-    <Compile Include="SRP\Better\SqlInsertVisitor.cs" />
-    <Compile Include="SRP\Better\SqlSelectVisitor.cs" />
-    <Compile Include="SRP\Better\SqlVisitor.cs" />
-    <Compile Include="SRP\Violations\Customer.cs" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
