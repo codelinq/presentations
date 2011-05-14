@@ -5,7 +5,7 @@ namespace Solid.Demo.SRP.Better
 {
     public class Repository<T>
     {
-        private DBContext _dbContext;
+        private readonly DBContext _dbContext;
 
         public Repository(DBContext context)
         {

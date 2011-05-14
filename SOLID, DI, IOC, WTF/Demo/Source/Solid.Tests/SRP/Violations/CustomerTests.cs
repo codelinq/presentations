@@ -13,7 +13,7 @@ namespace Solid.Tests.SRP.Violations
     [TestFixture]
     public class given_a_valid_customer_id
     {
-        [Test]
+        [Test, Ignore]
         [TestCase("{BD13EFE0-7D57-4E87-A088-8997DCD083C5}", "Bob")]
         public void should_find_the_customer(Guid id, string name)
         {

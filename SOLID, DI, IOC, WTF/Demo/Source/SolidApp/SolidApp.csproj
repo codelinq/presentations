@@ -34,8 +34,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="StructureMap">
+      <HintPath>..\packages\structuremap.2.6.2\lib\StructureMap.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -43,8 +49,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Config\AppRegistry.cs" />
+    <Compile Include="Domain.Implementation\EmployeeRepository.cs" />
+    <Compile Include="Domain.Implementation\Repository.cs" />
+    <Compile Include="Domain\IDataContext.cs" />
+    <Compile Include="Domain\IEmployeeRepository.cs" />
+    <Compile Include="Infrastructure\Data\EFDataContext.cs" />
+    <Compile Include="Infrastructure\Data\Model1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Infrastructure\EmailService.cs" />
+    <Compile Include="Domain\IRepository.cs" />
+    <Compile Include="Domain\Model\Employee.cs" />
+    <Compile Include="Domain\Services\IEmailService.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tasks\EmployeeBirthdayMailerTask.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="Infrastructure\Data\Model1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

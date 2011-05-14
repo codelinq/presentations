@@ -8,7 +8,7 @@ namespace Solid.Demo.SRP.Better
     class SqlSelectVisitor<T> : SqlVisitor<T>
     {
         private Guid _id;
-        private string _query;
+        private readonly string _query;
 
         public SqlSelectVisitor(Guid id)
         {

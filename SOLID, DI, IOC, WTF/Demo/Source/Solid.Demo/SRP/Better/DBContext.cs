@@ -13,7 +13,7 @@ namespace Solid.Demo.SRP.Better
 
         public void ExecuteNonQuery(IDbCommand command)
         {
-            
+            //execute query
         }
 
         public IDataReader ExecuteReader(IDbCommand command)

@@ -9,7 +9,7 @@ namespace Solid.Demo.OCP.Violations
     {
         internal void Growl()
         {
-            throw new NotImplementedException();
+            // send message to Growl
         }
     }
 }

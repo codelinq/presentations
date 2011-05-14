@@ -41,6 +41,32 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DIP\Better\Domain\ILogger.cs" />
+    <Compile Include="DIP\Better\Domain\INightlyTask.cs" />
+    <Compile Include="DIP\Better\Infrastructure\DbLogger.cs" />
+    <Compile Include="DIP\Better\Infrastructure\ElmahLogger.cs" />
+    <Compile Include="DIP\Better\Infrastructure\FogBugzLogger.cs" />
+    <Compile Include="DIP\Better\Services\NightlyTask.cs" />
+    <Compile Include="DIP\Violations\Infrastructure\ElmahLogger.cs" />
+    <Compile Include="DIP\Violations\Services\NightlyTask.cs" />
+    <Compile Include="ISP\Better\BusinessObject.cs" />
+    <Compile Include="ISP\Better\DbContext.cs" />
+    <Compile Include="ISP\Better\IBusinessObject.cs" />
+    <Compile Include="ISP\Better\IPersistable.cs" />
+    <Compile Include="ISP\Better\IValidatable.cs" />
+    <Compile Include="ISP\Better\Validator.cs" />
+    <Compile Include="ISP\Violations\BusinessObject.cs" />
+    <Compile Include="ISP\Violations\DbContext.cs" />
+    <Compile Include="ISP\Violations\IBusinessObject.cs" />
+    <Compile Include="ISP\Violations\Validator.cs" />
+    <Compile Include="LSP\Better\Product.cs" />
+    <Compile Include="LSP\Better\ShoppingCart.cs" />
+    <Compile Include="LSP\Better\UKProduct.cs" />
+    <Compile Include="LSP\Better\USProduct.cs" />
+    <Compile Include="LSP\Violations\Product.cs" />
+    <Compile Include="LSP\Violations\ShoppingCart.cs" />
+    <Compile Include="LSP\Violations\UKProduct.cs" />
+    <Compile Include="LSP\Violations\USProduct.cs" />
     <Compile Include="OCP\Better\BulkNotificationService.cs" />
     <Compile Include="OCP\Better\EmailNotificationService.cs" />
     <Compile Include="OCP\Better\GrowlNotificationService.cs" />
