@@ -1,0 +1,79 @@
+1. New Navigation Project
+
+2. Copy Images into project
+
+3. Create Fruit Model
+
+		@interface FruitModel : NSObject {
+		    NSString *name;
+		    NSString *image;
+		}
+
+		@property (nonatomic, retain) NSString *name;
+		@property (nonatomic, retain) NSString *image;
+
+		- (id) initWithName:(NSString *) Name withImage: (NSString *) Image;
+
+		@end
+
+		@implementation FruitModel
+		@synthesize name, image;
+
+		- (id) initWithName:(NSString *) Name withImage: (NSString *) Image{
+
+		    self.name = Name;
+		    self.image = Image;
+		    return self;
+		}
+
+		-(void) dealloc{
+		    [self.name release];
+		    [self.image release];
+		    [super dealloc];
+		}
+		@end
+
+
+4. Create Fruit Array in RootViewController
+		@interface RootViewController : UITableViewController {
+		    NSMutableArray *fruits;
+		}
+
+		@property (nonatomic, retain) NSMutableArray *fruits;
+
+		@end
+		
+		// Root View Controller.m
+		self.fruits = [[NSMutableArray alloc] initWithObjects:
+		                   [[FruitModel alloc] initWithName:@"watermelon" withImage:@"watermelon.jpg"],
+		                   [[FruitModel alloc] initWithName:@"apple" withImage:@"apple.jpg"],
+		                   [[FruitModel alloc] initWithName:@"kiwi" withImage:@"kiwi.jpg"],
+		                   [[FruitModel alloc] initWithName:@"orange" withImage:@"orange.jpg"],
+		                   [[FruitModel alloc] initWithName:@"banana" withImage:@"banana.jpg"],nil];
+		    self.navigationItem.title = @"Fruit List";
+
+5. set numberOfRowsInSection
+	return [self.fruits count];
+	
+6.  create cell
+FruitModel *model = [self.fruits objectAtIndex:indexPath.row];
+
+    // Configure the cell.
+    [[cell textLabel] setText:[model name]];
+    [[cell imageView] setImage:[UIImage imageNamed:[model image]]];
+
+7. Create FruitDetailViewController
+	UILabel, UIImageView (use new drag and drop in xcode 4)
+
+8.  did select row at index path
+	FruitDetailViewController *detailViewController = [[FruitDetailViewController alloc] initWithNibName:@"FruitDetailViewController" bundle:nil];
+    // ...
+    // Pass the selected object to the new view controller.
+    detailViewController.title = @"Fruit";
+    [self.navigationController pushViewController:detailViewController animated:YES];
+
+    FruitModel *model = [self.fruits objectAtIndex:indexPath.row];
+    [detailViewController.name setText:model.name];
+    [detailViewController.imageView setImage:[UIImage imageNamed:model.image]];
+    
+    [detailViewController release];

@@ -1,0 +1,327 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EE76621313B5724C0000D2A3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE76621213B5724C0000D2A3 /* UIKit.framework */; };
+		EE76621513B5724C0000D2A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE76621413B5724C0000D2A3 /* Foundation.framework */; };
+		EE76621713B5724C0000D2A3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE76621613B5724C0000D2A3 /* CoreGraphics.framework */; };
+		EE76621D13B5724C0000D2A3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EE76621B13B5724C0000D2A3 /* InfoPlist.strings */; };
+		EE76622013B5724C0000D2A3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EE76621F13B5724C0000D2A3 /* main.m */; };
+		EE76622313B5724C0000D2A3 /* FruitDemoCompleteAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EE76622213B5724C0000D2A3 /* FruitDemoCompleteAppDelegate.m */; };
+		EE76622613B5724C0000D2A3 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE76622413B5724C0000D2A3 /* MainWindow.xib */; };
+		EE76622913B5724C0000D2A3 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE76622813B5724C0000D2A3 /* RootViewController.m */; };
+		EE76622C13B5724C0000D2A3 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE76622A13B5724C0000D2A3 /* RootViewController.xib */; };
+		EE76623413B572A80000D2A3 /* FruitModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EE76623313B572A80000D2A3 /* FruitModel.m */; };
+		EE76623B13B57A220000D2A3 /* apple.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EE76623613B57A220000D2A3 /* apple.jpg */; };
+		EE76623C13B57A220000D2A3 /* banana.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EE76623713B57A220000D2A3 /* banana.jpg */; };
+		EE76623D13B57A220000D2A3 /* kiwi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EE76623813B57A220000D2A3 /* kiwi.jpg */; };
+		EE76623E13B57A220000D2A3 /* orange.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EE76623913B57A220000D2A3 /* orange.jpg */; };
+		EE76623F13B57A220000D2A3 /* watermelon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EE76623A13B57A220000D2A3 /* watermelon.jpg */; };
+		EE76624513B57BEB0000D2A3 /* FruitDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE76624313B57BEB0000D2A3 /* FruitDetailViewController.m */; };
+		EE76624613B57BEB0000D2A3 /* FruitDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE76624413B57BEB0000D2A3 /* FruitDetailViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EE76620E13B5724C0000D2A3 /* FruitDemoComplete.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FruitDemoComplete.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE76621213B5724C0000D2A3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EE76621413B5724C0000D2A3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EE76621613B5724C0000D2A3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EE76621A13B5724C0000D2A3 /* FruitDemoComplete-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FruitDemoComplete-Info.plist"; sourceTree = "<group>"; };
+		EE76621C13B5724C0000D2A3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EE76621E13B5724C0000D2A3 /* FruitDemoComplete-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FruitDemoComplete-Prefix.pch"; sourceTree = "<group>"; };
+		EE76621F13B5724C0000D2A3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EE76622113B5724C0000D2A3 /* FruitDemoCompleteAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FruitDemoCompleteAppDelegate.h; sourceTree = "<group>"; };
+		EE76622213B5724C0000D2A3 /* FruitDemoCompleteAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FruitDemoCompleteAppDelegate.m; sourceTree = "<group>"; };
+		EE76622513B5724C0000D2A3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		EE76622713B5724C0000D2A3 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		EE76622813B5724C0000D2A3 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		EE76622B13B5724C0000D2A3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RootViewController.xib; sourceTree = "<group>"; };
+		EE76623213B572A80000D2A3 /* FruitModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FruitModel.h; sourceTree = "<group>"; };
+		EE76623313B572A80000D2A3 /* FruitModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FruitModel.m; sourceTree = "<group>"; };
+		EE76623613B57A220000D2A3 /* apple.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = apple.jpg; sourceTree = "<group>"; };
+		EE76623713B57A220000D2A3 /* banana.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = banana.jpg; sourceTree = "<group>"; };
+		EE76623813B57A220000D2A3 /* kiwi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = kiwi.jpg; sourceTree = "<group>"; };
+		EE76623913B57A220000D2A3 /* orange.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = orange.jpg; sourceTree = "<group>"; };
+		EE76623A13B57A220000D2A3 /* watermelon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = watermelon.jpg; sourceTree = "<group>"; };
+		EE76624213B57BEB0000D2A3 /* FruitDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FruitDetailViewController.h; path = FruitDemoComplete.xcodeproj/FruitDetailViewController.h; sourceTree = SOURCE_ROOT; };
+		EE76624313B57BEB0000D2A3 /* FruitDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FruitDetailViewController.m; path = FruitDemoComplete.xcodeproj/FruitDetailViewController.m; sourceTree = SOURCE_ROOT; };
+		EE76624413B57BEB0000D2A3 /* FruitDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FruitDetailViewController.xib; path = FruitDemoComplete.xcodeproj/FruitDetailViewController.xib; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EE76620B13B5724C0000D2A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE76621313B5724C0000D2A3 /* UIKit.framework in Frameworks */,
+				EE76621513B5724C0000D2A3 /* Foundation.framework in Frameworks */,
+				EE76621713B5724C0000D2A3 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EE76620313B5724C0000D2A3 = {
+			isa = PBXGroup;
+			children = (
+				EE76621813B5724C0000D2A3 /* FruitDemoComplete */,
+				EE76621113B5724C0000D2A3 /* Frameworks */,
+				EE76620F13B5724C0000D2A3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EE76620F13B5724C0000D2A3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE76620E13B5724C0000D2A3 /* FruitDemoComplete.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE76621113B5724C0000D2A3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EE76621213B5724C0000D2A3 /* UIKit.framework */,
+				EE76621413B5724C0000D2A3 /* Foundation.framework */,
+				EE76621613B5724C0000D2A3 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EE76621813B5724C0000D2A3 /* FruitDemoComplete */ = {
+			isa = PBXGroup;
+			children = (
+				EE76624213B57BEB0000D2A3 /* FruitDetailViewController.h */,
+				EE76624313B57BEB0000D2A3 /* FruitDetailViewController.m */,
+				EE76624413B57BEB0000D2A3 /* FruitDetailViewController.xib */,
+				EE76622113B5724C0000D2A3 /* FruitDemoCompleteAppDelegate.h */,
+				EE76622213B5724C0000D2A3 /* FruitDemoCompleteAppDelegate.m */,
+				EE76622413B5724C0000D2A3 /* MainWindow.xib */,
+				EE76622713B5724C0000D2A3 /* RootViewController.h */,
+				EE76622813B5724C0000D2A3 /* RootViewController.m */,
+				EE76622A13B5724C0000D2A3 /* RootViewController.xib */,
+				EE76621913B5724C0000D2A3 /* Supporting Files */,
+				EE76623213B572A80000D2A3 /* FruitModel.h */,
+				EE76623313B572A80000D2A3 /* FruitModel.m */,
+				EE76623513B57A220000D2A3 /* FruitImages */,
+			);
+			path = FruitDemoComplete;
+			sourceTree = "<group>";
+		};
+		EE76621913B5724C0000D2A3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EE76621A13B5724C0000D2A3 /* FruitDemoComplete-Info.plist */,
+				EE76621B13B5724C0000D2A3 /* InfoPlist.strings */,
+				EE76621E13B5724C0000D2A3 /* FruitDemoComplete-Prefix.pch */,
+				EE76621F13B5724C0000D2A3 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EE76623513B57A220000D2A3 /* FruitImages */ = {
+			isa = PBXGroup;
+			children = (
+				EE76623613B57A220000D2A3 /* apple.jpg */,
+				EE76623713B57A220000D2A3 /* banana.jpg */,
+				EE76623813B57A220000D2A3 /* kiwi.jpg */,
+				EE76623913B57A220000D2A3 /* orange.jpg */,
+				EE76623A13B57A220000D2A3 /* watermelon.jpg */,
+			);
+			path = FruitImages;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EE76620D13B5724C0000D2A3 /* FruitDemoComplete */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE76622F13B5724C0000D2A3 /* Build configuration list for PBXNativeTarget "FruitDemoComplete" */;
+			buildPhases = (
+				EE76620A13B5724C0000D2A3 /* Sources */,
+				EE76620B13B5724C0000D2A3 /* Frameworks */,
+				EE76620C13B5724C0000D2A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FruitDemoComplete;
+			productName = FruitDemoComplete;
+			productReference = EE76620E13B5724C0000D2A3 /* FruitDemoComplete.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EE76620513B5724C0000D2A3 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = EE76620813B5724C0000D2A3 /* Build configuration list for PBXProject "FruitDemoComplete" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EE76620313B5724C0000D2A3;
+			productRefGroup = EE76620F13B5724C0000D2A3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE76620D13B5724C0000D2A3 /* FruitDemoComplete */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EE76620C13B5724C0000D2A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE76621D13B5724C0000D2A3 /* InfoPlist.strings in Resources */,
+				EE76622613B5724C0000D2A3 /* MainWindow.xib in Resources */,
+				EE76622C13B5724C0000D2A3 /* RootViewController.xib in Resources */,
+				EE76623B13B57A220000D2A3 /* apple.jpg in Resources */,
+				EE76623C13B57A220000D2A3 /* banana.jpg in Resources */,
+				EE76623D13B57A220000D2A3 /* kiwi.jpg in Resources */,
+				EE76623E13B57A220000D2A3 /* orange.jpg in Resources */,
+				EE76623F13B57A220000D2A3 /* watermelon.jpg in Resources */,
+				EE76624613B57BEB0000D2A3 /* FruitDetailViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EE76620A13B5724C0000D2A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE76622013B5724C0000D2A3 /* main.m in Sources */,
+				EE76622313B5724C0000D2A3 /* FruitDemoCompleteAppDelegate.m in Sources */,
+				EE76622913B5724C0000D2A3 /* RootViewController.m in Sources */,
+				EE76623413B572A80000D2A3 /* FruitModel.m in Sources */,
+				EE76624513B57BEB0000D2A3 /* FruitDetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EE76621B13B5724C0000D2A3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE76621C13B5724C0000D2A3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EE76622413B5724C0000D2A3 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE76622513B5724C0000D2A3 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		EE76622A13B5724C0000D2A3 /* RootViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE76622B13B5724C0000D2A3 /* en */,
+			);
+			name = RootViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EE76622D13B5724C0000D2A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EE76622E13B5724C0000D2A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		EE76623013B5724C0000D2A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FruitDemoComplete/FruitDemoComplete-Prefix.pch";
+				INFOPLIST_FILE = "FruitDemoComplete/FruitDemoComplete-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EE76623113B5724C0000D2A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FruitDemoComplete/FruitDemoComplete-Prefix.pch";
+				INFOPLIST_FILE = "FruitDemoComplete/FruitDemoComplete-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EE76620813B5724C0000D2A3 /* Build configuration list for PBXProject "FruitDemoComplete" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE76622D13B5724C0000D2A3 /* Debug */,
+				EE76622E13B5724C0000D2A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE76622F13B5724C0000D2A3 /* Build configuration list for PBXNativeTarget "FruitDemoComplete" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE76623013B5724C0000D2A3 /* Debug */,
+				EE76623113B5724C0000D2A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EE76620513B5724C0000D2A3 /* Project object */;
+}
